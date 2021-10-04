@@ -1,0 +1,11 @@
+loom:
+  threads: 10
+  repeats: 1_000_000
+  monitor:
+    period_seconds: 5
+    print-header: true
+    print-header-lines: 10
+  client:
+    connect-timeout-millis: 1000
+    read-timeout-millis: 1000
+    uri: "http://localhost:8080/loom/quick"
